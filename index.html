@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/lightbox.css">
-	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
 	<!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
@@ -30,6 +30,12 @@
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!– 전화걸기 스크립트 –>
+	<script type="text/javascript">
+	function callNumber(num){
+		location.href="tel:"+num;
+	}
+	</script>
 </head>
 
 <body class="index-page" >
@@ -38,17 +44,17 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-				<a class="navbar-brand page-scroll" href="#page-top">WeddingDay</a>
+                </button>-->
+				<a class="navbar-brand page-scroll" href="#page-top" style="font-family: 'Hanna', serif;">승우 & 자은 청첩장</a>
             </div>
 			<div class="logo">
 				<a href="index.html">
-					<div class="name t-right">Jason <span> Satrovsky  </span></div><div class="and">&amp;</div><div class="name t-left"> Sophie <span> Angela</span></div>
+					<div class="name t-right">임승우</div><div class="and">&amp;</div><div class="name t-left">김자은</div>
 				</a>
 			</div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,11 +69,11 @@
                     <li>
                         <a class="page-scroll" href="#nav-story">Our Story</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a class="page-scroll" href="#nav-people">Important People</a>
-                    </li>
+                    </li>-->
                     <li>
-                        <a class="page-scroll" href="#nav-blog">Our Blog</a>
+                        <a class="page-scroll" href="#nav-blog">Contact Us</a>
                     </li>
 					<li>
                         <a class="page-scroll" href="#nav-photo">Gallery</a>
@@ -94,20 +100,29 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 			    <div class="item active">
-			    	<img src="images/1.jpg" alt="First slide">
+			    	<img src="images/0.jpg" alt="First slide">
                     <!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
-                            <h2 class="header-text">We are Invite all to Celebrate Our Wedding<br><br><span>The Party is Over!!</span></h2>
+                            <h2 class="header-text">We are Invite all <br><br><span>to Celebrate Our Wedding</span></h2>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			    <div class="item">
-			    	<img src="images/2.jpg" alt="Second slide">
+			    	<img src="images/1.jpg" alt="Second slide">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
-                            <h2 class="header-text">We are Invite all to Celebrate Our Wedding<br><br><span>The Party is Over!!</span></h2>
+                            <h2 class="header-text">We are Invite all <br><br><span>to Celebrate Our Wedding</span></h2>
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<img src="images/2.jpg" alt="Third slide">
+			    	<!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2 class="header-text">We are Invite all <br><br><span>to Celebrate Our Wedding</span></h2>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
@@ -135,15 +150,17 @@
 						<div class="box-item">
 							<div>
 								<a href="#"><img src="images/bride.jpg" title="icon-name" class="img-circle"></a>
-								<h3>Jason Story</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<h3>신부 김자은</h3>
+								<p><b>김부조 · 윤정선</b> 의 장녀</p>
 								<ul class="list-inline social">
+									<li><a href="tel:010-2478-7834"><i class="fa fa-comment"></i></a></li>
+									<li><a href="tel:010-2478-7834"><i class="fa fa-phone"></i></a></li>
 									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
 								</ul>
-								<a class="btn btn-1" href="single.html">Read More</a>
+								<!--<a class="btn btn-1" href="single.html">Read More</a>-->
 							</div>
 						</div>
 			 		</div>
@@ -151,15 +168,15 @@
 						<div class="box-item fix-right">
 							<div>
 								<a href="#"><img src="images/groom.jpg" title="icon-name" class="img-circle"></a>
-								<h3>Sophie Story</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+								<h3>신랑 임승우</h3>
+								<p><b>임성균 · 강경심</b> 의 장녀</p>
 								<ul class="list-inline social">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="http://facebook.com/bonjoa"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
 								</ul>
-								<a class="btn btn-1" href="single.html">Read More</a>
+								<!--<a class="btn btn-1" href="single.html">Read More</a>-->
 							</div>
 						</div>
 			 		</div>
@@ -251,7 +268,7 @@
 			</div>
 		</section>
 		
-		<!-- ////////////Content Box 03 -->
+		<!-- ////////////Content Box 03 
 		<section class="box-content box-3 box-style-3" id="nav-people">
 			<div class="container">
 				<div class="row heading">
@@ -340,7 +357,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 		
 		<!-- ////////////Content Box 04 -->
 		<section class="box-content box-4 box-style-2">

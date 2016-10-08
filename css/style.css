@@ -172,7 +172,9 @@ body.sub-page header {margin: 195px 0 80px;background: url(../images/bg.jpg) fix
 /* -------------------------------------Box 1---------------------------------- */
 /* ---------------------------------------------------------------------------- */
 .box-content.box-1 {padding-top: 170px;}
-.box-content.box-1 .box-item{margin-bottom: 30px;float: left;text-align: center;font-family: 'Open Sans', sans-serif;
+.box-content.box-1 .box-item{margin-bottom: 30px;
+    /*float: left;*/
+    text-align: center;font-family: 'Open Sans', sans-serif;
 	border-radius: 4px;
 	background-color: rgba(255, 255, 255, 0.8);
 	padding-top: 60px;
